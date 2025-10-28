@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://gratisfolio.web.app
+
+# Sitemaps
+Sitemap: https://gratisfolio.web.app/sitemap.xml
