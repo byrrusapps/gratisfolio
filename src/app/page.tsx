@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Home from "./(home)/page";
+import Home from "./(home)/main";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

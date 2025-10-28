@@ -8,9 +8,7 @@
     ],
     "frameworksBackend": {
       "region": "us-central1",
-      "maxInstances": 100,
-      "minInstances": 0,
-      "concurrency": 80
+      "minInstances": 1
     }
   }
 }
