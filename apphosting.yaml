@@ -1,9 +1,4 @@
-name: gratisfolio
-region: us-central1
-
 env:
-  runtime: nodejs20
-  secrets:
     - key: NEXT_PUBLIC_API_KEY
       secret: NEXT_PUBLIC_API_KEY
     - key: NEXT_PUBLIC_AUTH_DOMAIN
@@ -26,7 +21,3 @@ env:
       secret: NEXT_PUBLIC_ALGOLIA_APP_ID
     - key: NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY
       secret: NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY
-
-build:
-  command: npm run build
-  output_dir: .next
