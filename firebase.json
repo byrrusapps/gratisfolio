@@ -6,9 +6,6 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "frameworksBackend": {
-      "region": "us-central1",
-    }
   },
   "functions": {
     "source": "functions",
