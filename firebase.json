@@ -8,7 +8,6 @@
     ],
     "frameworksBackend": {
       "region": "us-central1",
-      "minInstances": 1
     }
   },
   "functions": {
