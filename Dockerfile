@@ -1,25 +1,29 @@
-FROM node:18-alpine
+FROM node:18-alpine AS base
 
+# Install dependencies only when needed
+FROM base AS deps
 WORKDIR /app
-
-# Copy package files
 COPY package*.json ./
-
-# Install dependencies
 RUN npm ci --production=false
 
-# Copy ALL source files BEFORE building
+# Build
+FROM base AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-
-# Now build (it will find src/app)
 RUN npm run build
 
-# Expose port
-EXPOSE 8080
+# Production - smallest image
+FROM base AS runner
+WORKDIR /app
 
-# Environment variables
 ENV NODE_ENV=production
 ENV PORT=8080
 
-# Start the application
-CMD ["npm", "start"]
+# Copy only what's needed
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
+
+EXPOSE 8080
+CMD ["node", "server.js"]

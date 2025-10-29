@@ -19,7 +19,7 @@ const allowedOrigins = [
   "https://gratisfolio.vercel.app",
 ];
 app.use(cors({
-  origin: function (origin, callback) {
+  origin: function (origin, callback) {a
     if (!origin) return callback(null, true); // allow curl/postman
     if (allowedOrigins.indexOf(origin) === -1) {
       return callback(new Error(`CORS blocked: ${origin}`), false);

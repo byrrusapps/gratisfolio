@@ -1,10 +1,10 @@
 # Settings for Backend (on Cloud Run).
 # See https://firebase.google.com/docs/app-hosting/configure#cloud-run
 runConfig:
-  minInstances: 0
+  minInstances: 1
   maxInstances: 4
   concurrency: 80
-  cpu: 1
+  cpu: 2
   memoryMiB: 2048
 
 buildpack:
