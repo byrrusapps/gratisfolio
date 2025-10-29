@@ -1,0 +1,6 @@
+node_modules/
+.next/
+.git/
+.firebase/
+npm-debug.log
+.env*.local
