@@ -1,6 +1,36 @@
 {
+  "name": "resume-builder",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
+    "dev": "next dev",
     "build": "next build",
     "start": "next start -p 8080"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.4",
+    "@opentelemetry/api": "^1.9.0",
+    "algoliasearch": "^5.40.0",
+    "firebase": "^12.4.0",
+    "firebase-admin": "^13.5.0",
+    "firebase-functions": "^6.6.0",
+    "html2canvas": "^1.4.1",
+    "next": "15.5.4",
+    "next-sitemap": "^4.2.3",
+    "puppeteer": "^24.25.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4",
+    "typescript": "^5"
   }
 }
