@@ -1,3 +1,12 @@
+# Settings for Backend (on Cloud Run).
+# See https://firebase.google.com/docs/app-hosting/configure#cloud-run
+runConfig:
+  minInstances: 0
+  maxInstances: 20
+  concurrency: 80
+  cpu: 2
+  memoryMiB: 2GiB
+
 env:
     - key: NEXT_PUBLIC_API_KEY
       secret: NEXT_PUBLIC_API_KEY
