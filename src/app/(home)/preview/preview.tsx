@@ -113,7 +113,7 @@ const Preview = () => {
             titleFont: titleFontUrl,
           });
 
-          const res = await fetch("/api/cv", {
+          const res = await fetch("https://generatecvpdf-tk5xei3ykq-uc.a.run.app/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ html }),

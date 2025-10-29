@@ -12,6 +12,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.4",
+    "@opentelemetry/api": "^1.9.0",
     "algoliasearch": "^5.40.0",
     "firebase": "^12.4.0",
     "firebase-admin": "^13.5.0",

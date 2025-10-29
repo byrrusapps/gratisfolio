@@ -34,7 +34,7 @@ const useHandleAuth = ({ user, setUser }: UseHandleAuthParams): void => {
         const { uid, displayName, photoURL, email } = userFB;
 
         const onResult = (data: UserInfo | UserInfo[] | null, error?: unknown) => {
-          console.log(data);
+          // console.log(data);
           // Handle error
           if (error) {
             console.error("Error fetching user data:", error);
