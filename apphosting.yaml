@@ -8,6 +8,8 @@ runConfig:
   memoryMiB: 2GiB
 
 env:
+    - variable: NODE_ENV
+      value: production
     - key: NEXT_PUBLIC_API_KEY
       secret: NEXT_PUBLIC_API_KEY
     - key: NEXT_PUBLIC_AUTH_DOMAIN
