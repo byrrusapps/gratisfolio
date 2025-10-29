@@ -7,6 +7,9 @@ runConfig:
   cpu: 1
   memoryMiB: 2048
 
+buildpack:
+  enabled: false
+
 env:
     - variable: NODE_ENV
       value: production
